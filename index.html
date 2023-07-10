@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Selection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./src/images/title.gif" alt="logo.svg">
+    </header>
+
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo"> Selecione um personagem </h1>
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="ciclope" data-name="Ciclope" data-description="Ele tem o poder de disparar rajadas ópticas por um acidente que aconteceu com ele quando criança, mas não consegue controlá-los.">
+                    <img src="./src/images/card-ciclope.jpg" alt="ciclope">
+                </li>
+                <li class="personagem" id="jean-grey" data-name="Jean Grey" data-description="Os poderes de Jean eram restritos a simples telecinese, e até mesmo levantar seu próprio peso rapidamente cansava ela.">
+                    <img src="./src/images/card-jean-grey.jpg" alt="jeangrey">
+                </li>
+                <li class="personagem" id="magneto" data-name="Magneto" data-description="Ele tem o poder de magnetocinese, ou seja, controlar objetos de metal e criar campos magnéticos.">
+                    <img src="./src/images/card-magneto.jpg" alt="magneto">
+                </li>
+                <li class="personagem" id="lince-negra" data-name="Lince Negra" data-description="Ela tem o poder de atravessar matéria sólida,campos de energia,rajadas ópticas, continuando intacta,e também tem o poder de andar no ar.">
+                    <img src="./src/images/card-lince-negra.jpg" alt="lince-negra">
+                </li>
+                <li class="personagem" id="noturno" data-name="Noturno" data-description="Ele é um mutante que nasceu com cauda, orelhas pontudas, mãos com três dedos e pés com dois dedos. Tem o poder de se teletransportar.">
+                    <img src="./src/images/card-noturno.jpg" alt="noturno">
+                </li>
+                <li class="personagem" id="tempestade" data-name="Tempestade" data-description="Tem o poder de controlar as forças da natureza, faz o clima variar entre seus extremos, muito poderosa ela pode produzir raios, chuvas, gelos, ventos, neblina, entre outros efeitos.">
+                    <img src="./src/images/card-tempestade.jpg" alt="tempestade">
+                </li>
+                <li class="personagem" id="vampira" data-name="Vampira" data-description="Ela tem o poder de absorver a vitalidade e memória das pessoas que toca ou no caso dos mutantes os poderes e a memória, mas só temporariamente.">
+                    <img src="./src/images/card-vampira.jpg" alt="vampira">
+                </li>
+                <li class="personagem" id="wolverine" data-name="Wolverine" data-description="Wolverine é um dos mutantes mais importante e reconhecido da história dos X-Men. Possui garras mortais de Adamantium, um metal extremamente raro.">
+                    <img src="./src/images/card-wolverine.jpg" alt="wolverine">
+                </li>
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-ampliado" src="./src/images/card-ciclope.png" alt="personagem-selecionado">
+
+            <div class="info-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">Ciclope</h2>
+                <p class="descricao-personagem" id="descricao-personagem">Ele tem o poder de disparar rajadas ópticas por um acidente que aconteceu enquanto ainda era criança, mas não consegue controlá-los</p>
+            </div>
+        </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
